@@ -70,6 +70,6 @@ cursor: pointer;
   text-align: center;
 }
 
-.carousel slide{
-  align-items: center;
+.container{
+  padding-bottom: 50px;
 }
