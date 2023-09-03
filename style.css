@@ -74,9 +74,9 @@ cursor: pointer;
 .container{
   padding-bottom: 50px;
 }
-.col-md-6{
+.col-md-10{
   border-style: solid;
-  border-color: black;
+  border-color: rgba(0, 0, 0, 0.481);
   border-radius: 15px;
   border-width: 10px;
 }
