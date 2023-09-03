@@ -73,3 +73,9 @@ cursor: pointer;
 .container{
   padding-bottom: 50px;
 }
+.col-md-6{
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  border-width: 10px;
+}
