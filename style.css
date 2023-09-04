@@ -1,51 +1,68 @@
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
-  
+margin: 0; 
+padding: 0;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
 }
-.Main{
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.99),rgba(0, 0, 0, 0.085)),url(images/Background.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.99),rgba(0,0,0,0.085)),url(images/Background\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-nav{
-  display: flex;
-  align-items: center;
+nav {
+display: flex;
+transition: top 0.3s;
+flex-wrap: wrap;
+align-items: center;
 justify-content: space-between;
+font-weight: bold;
 padding-top: 40px;
 padding-left: 10%;
 padding-right: 10%;
-
 }
-.logo{
-  color: white;
-  font-size: 50px;
+nav a {
+text-decoration: none;
+color: white;
 }
-.logo:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-}
-span{
+nav a:hover{
   color: #ea1538;
+  transition: 1s;
 }
-nav ul li{
- list-style-type: none;
- display: inline-block; 
- padding: 10px 20px;
+.list{
+	display: flex;
+	list-style: none;
+	gap: 25px;
 }
-nav ul li a{
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  
 
+
+#toggler, label{
+display: none;
 }
-nav ul li a:hover{
+label i{
+color: white;
+}
+@media screen and (max-width: 650px){
+
+.menu{
+width: 100%;
+max-height: 0;
+overflow: hidden;
+}
+label{
+display: inline-flex;
+}
+#toggler:checked~.menu{
+max-height: 100%;
+}
+.list{
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+.list:hover{
   color: #ea1538;
   transition: .3s;
 }
@@ -69,6 +86,7 @@ cursor: pointer;
   margin: auto;
   padding-top: 50px;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .container{
