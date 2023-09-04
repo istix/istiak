@@ -5,21 +5,22 @@ box-sizing: border-box;
 font-family: 'Josefin Sans', sans-serif;
 }
 .main{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.99),rgba(0,0,0,0.085)),url(images/Background\ \(1\).png);
-    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    background-color: #006633;
+    
     background-size: contain;
     background-position: center;
+    
 }
+
 nav {
 display: flex;
-transition: top 0.3s;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-between;
 font-weight: bold;
-padding-top: 40px;
+padding-top: 10px;
 padding-left: 10%;
 padding-right: 10%;
 font-family: 'Josefin Sans', sans-serif;
@@ -31,6 +32,10 @@ color: white;
 nav a:hover{
   color: #ea1538;
   transition: 1s;
+}
+nav img:hover{
+  transform: scale(1.3);
+  cursor: pointer;
 }
 .list{
 	display: flex;
@@ -83,15 +88,17 @@ cursor: pointer;
 }
 
 
-.second{
+}
+.from{
   margin: auto;
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .container{
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .col-md-10{
   border-style: solid;
